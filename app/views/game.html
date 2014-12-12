@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="jboard">
+    <table>
+      <thead>
+        <tr>
+          <th ng-repeat="category in game.categories">{{ category.name }}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="questionNumber in [0, 1, 2, 3, 4]">
+          <td ng-repeat="category in game.categories">
+            <span ng-hide="category.questions[questionNumber].isDone"
+                  ng-click="doQuestion(category.questions[questionNumber])">{{ category.questions[questionNumber].value }}</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="score">
+    <h4>Score: <span id="score">{{ score }}</span></h4>
+  </div>
+
+  <!-- <pre>{{ game | json }}</pre> -->
+
+</div>
