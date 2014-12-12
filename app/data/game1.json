@@ -7,28 +7,28 @@
       "questions": [
         {
           "value": 100,
-          "question": "This method is called when you create a new object.",
-          "answer": "What is initialize?"
-        },
-        {
-          "value": 200,
-          "question": "This method removes the newline character from user typed input.",
+          "question": "Removes the newline character from user typed input.",
           "answer": "What is chomp?"
         },
         {
+          "value": 200,
+          "question": "A simple way to encapsulate several key/value pairs.",
+          "answer": "What is a hash?"
+        },
+        {
           "value": 300,
-          "question": "TODO",
-          "answer": "What is todo?"
+          "question": "A variable that belongs to an object.",
+          "answer": "What is an instance variable?"
         },
         {
           "value": 400,
-          "question": "TODO",
-          "answer": "What is todo?"
+          "question": "Called each time you create a new object.",
+          "answer": "What is initialize?"
         },
         {
           "value": 500,
-          "question": "TODO",
-          "answer": "What is todo?"
+          "question": "Writing a unit test before writing the application code.",
+          "answer": "What is TDD (Test Driven Development)?"
         }
       ]
     },
@@ -38,28 +38,28 @@
       "questions": [
         {
           "value": 100,
-          "question": "The Default Object Relational Mapping Engine of Rails",
+          "question": "The Object Relational Mapping Engine of Rails.",
           "answer": "What is Active Record?"
         },
         {
           "value": 200,
-          "question": "This gem is useful when integrating with a external RESTfull service.",
+          "question": "A gem for calling external RESTful services.",
           "answer": "What is HTTParty?"
         },
         {
           "value": 300,
-          "question": "TODO",
-          "answer": "What is todo?"
+          "question": "Separating the concerns of presentation, behavior, and data.",
+          "answer": "What is MVC (Model/View/Controller)?"
         },
         {
           "value": 400,
-          "question": "TODO",
-          "answer": "What is todo?"
+          "question": "The operations for creating, reading, updating, and deleting data.",
+          "answer": "What is CRUD?"
         },
         {
           "value": 500,
-          "question": "TODO",
-          "answer": "What is todo?"
+          "question": "Concatenates, minifies, compresses, and pre-processes HTML, CSS, and JavaScript assets.",
+          "answer": "What is the Asset Pipeline?"
         }
       ]
     },
@@ -69,12 +69,12 @@
       "questions": [
         {
           "value": 100,
-          "question": "JavaScript objects can extend other objects using this.",
+          "question": "How JavaScript objects extend other objects.",
           "answer": "What is Prototype Inheritance?"
         },
         {
           "value": 200,
-          "question": "JavaScript objects can be serialized into this format.",
+          "question": "A serialization format for JavaScript objects.",
           "answer": "What is JSON?"
         },
         {
@@ -89,8 +89,8 @@
         },
         {
           "value": 500,
-          "question": "TODO",
-          "answer": "What is todo?"
+          "question": "A function that binds to non-local variables in its lexical scope.",
+          "answer": "What is a closure?"
         }
       ]
     },
@@ -100,28 +100,28 @@
       "questions": [
         {
           "value": 100,
-          "question": "This object is used to bind data between a view and a controller.",
+          "question": "Binds data between a view and a controller.",
           "answer": "What is $scope?"
         },
         {
           "value": 200,
-          "question": "Asynchronous operations, such as $http.get, return these as placeholders until the operation has completed.",
-          "answer": "What are promises?"
+          "question": "The container for an AngularJS application or library.",
+          "answer": "What is a module?"
         },
         {
           "value": 300,
-          "question": "TODO",
-          "answer": "What is todo?"
+          "question": "Automatic insertion of an object into a function's parameter list",
+          "answer": "What is dependency injection?"
         },
         {
           "value": 400,
-          "question": "TODO",
-          "answer": "What is todo?"
+          "question": "The AngularJS directive for iterating over a collection.",
+          "answer": "What is ng-repeat?"
         },
         {
           "value": 500,
-          "question": "TODO",
-          "answer": "What is todo?"
+          "question": "Asynchronous operations, such as $http.get, return these.",
+          "answer": "What are promises?"
         }
       ]
     },
@@ -131,7 +131,7 @@
       "questions": [
         {
           "value": 100,
-          "question": "This programming paradigm is based on data structures that can contain both data and behavior.",
+          "question": "A programming paradigm based on data structures that encapsulate both data and behavior.",
           "answer": "What is Object Oriented Programming?"
         },
         {
@@ -141,18 +141,18 @@
         },
         {
           "value": 300,
-          "question": "TODO",
-          "answer": "What is todo?"
+          "question": "A slow way to sort a million numbers.",
+          "answer": "What is bubble sort?"
         },
         {
           "value": 400,
-          "question": "TODO",
-          "answer": "What is todo?"
+          "question": "A Last In First Out (LIFO) data structure",
+          "answer": "What is a stack?"
         },
         {
           "value": 500,
-          "question": "TODO",
-          "answer": "What is todo?"
+          "question": "An algorithm for determining the shortest path between two nodes.",
+          "answer": "What is Dijkstra's Algorithm?"
         }
       ]
     }
