@@ -14,12 +14,17 @@ angular.module('jeopardyApp')
 
   $scope.getGame('game1');
 
-  $scope.doQuestion = function(question) {
+  $scope.doQuestion = function(category, question) {
     var modalInstance = $modal.open({
       templateUrl: 'views/question.html',
       controller: 'QuestionCtrl',
       size: 'lg',
+      backdrop: 'static', // backdrop is present but modal window is not closed when clicking outside of the modal window.
+      keyboard: false,    // indicates whether the dialog should be closable by hitting the ESC key
       resolve: {
+        category: function() {
+          return category;
+        },
         question: function () {
           return question;
         }

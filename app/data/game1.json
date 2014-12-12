@@ -13,22 +13,22 @@
         {
           "value": 200,
           "question": "This method removes the newline character from user typed input.",
-          "answers": "What is chomp?"
+          "answer": "What is chomp?"
         },
         {
           "value": 300,
           "question": "TODO",
-          "answers": "What is todo?"
+          "answer": "What is todo?"
         },
         {
           "value": 400,
           "question": "TODO",
-          "answers": "What is todo?"
+          "answer": "What is todo?"
         },
         {
           "value": 500,
           "question": "TODO",
-          "answers": "What is todo?"
+          "answer": "What is todo?"
         }
       ]
     },
@@ -44,22 +44,22 @@
         {
           "value": 200,
           "question": "This gem is useful when integrating with a external RESTfull service.",
-          "answers": "What is HTTParty?"
+          "answer": "What is HTTParty?"
         },
         {
           "value": 300,
           "question": "TODO",
-          "answers": "What is todo?"
+          "answer": "What is todo?"
         },
         {
           "value": 400,
           "question": "TODO",
-          "answers": "What is todo?"
+          "answer": "What is todo?"
         },
         {
           "value": 500,
           "question": "TODO",
-          "answers": "What is todo?"
+          "answer": "What is todo?"
         }
       ]
     },
@@ -75,22 +75,22 @@
         {
           "value": 200,
           "question": "JavaScript objects can be serialized into this format.",
-          "answers": "What is JSON?"
+          "answer": "What is JSON?"
         },
         {
           "value": 300,
           "question": "TODO",
-          "answers": "What is todo?"
+          "answer": "What is todo?"
         },
         {
           "value": 400,
           "question": "TODO",
-          "answers": "What is todo?"
+          "answer": "What is todo?"
         },
         {
           "value": 500,
           "question": "TODO",
-          "answers": "What is todo?"
+          "answer": "What is todo?"
         }
       ]
     },
@@ -106,22 +106,22 @@
         {
           "value": 200,
           "question": "Asynchronous operations, such as $http.get, return these as placeholders until the operation has completed.",
-          "answers": "What are promises?"
+          "answer": "What are promises?"
         },
         {
           "value": 300,
           "question": "TODO",
-          "answers": "What is todo?"
+          "answer": "What is todo?"
         },
         {
           "value": 400,
           "question": "TODO",
-          "answers": "What is todo?"
+          "answer": "What is todo?"
         },
         {
           "value": 500,
           "question": "TODO",
-          "answers": "What is todo?"
+          "answer": "What is todo?"
         }
       ]
     },
@@ -137,22 +137,22 @@
         {
           "value": 200,
           "question": "When a function calls itself.",
-          "answers": "What is recursion?"
+          "answer": "What is recursion?"
         },
         {
           "value": 300,
           "question": "TODO",
-          "answers": "What is todo?"
+          "answer": "What is todo?"
         },
         {
           "value": 400,
           "question": "TODO",
-          "answers": "What is todo?"
+          "answer": "What is todo?"
         },
         {
           "value": 500,
           "question": "TODO",
-          "answers": "What is todo?"
+          "answer": "What is todo?"
         }
       ]
     }

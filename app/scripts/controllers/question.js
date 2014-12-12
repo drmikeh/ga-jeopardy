@@ -1,8 +1,9 @@
 'use strict';
 
 angular.module('jeopardyApp')
-.controller('QuestionCtrl', function ($scope, $modalInstance, question) {
+.controller('QuestionCtrl', function ($scope, $modalInstance, category, question) {
 
+  $scope.category = category;
   $scope.question = question;
 
   $scope.showAnswer = false;
