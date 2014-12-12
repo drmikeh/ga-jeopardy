@@ -21,16 +21,18 @@
     <div class="container">
       <div class="header">
         <ul class="nav nav-pills pull-right">
-          <li class="active"><a ng-href="#">Home</a></li>
+          <li class="active"><a ng-href="#/home">Home</a></li>
           <li><a ng-href="#/about">About</a></li>
         </ul>
-        <h3 class="text-muted">Welcome to GA Jeopardy</h3>
+        <h3 class="text-muted">Welcome to <img src="images/ga.png" alt="GA" height="42" width="42">
+          <span class="jeopardy-text">Jeopardy!</span></h3>
       </div>
 
       <div ng-view=""></div>
 
       <div class="footer">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+        <!-- <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p> -->
+        <p>Developed by Mike Hopper</p>
       </div>
     </div>
 
