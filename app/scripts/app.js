@@ -9,7 +9,8 @@ angular
   'ngRoute',
   'ngSanitize',
   'ngTouch',
-  'ui.bootstrap'
+  'ui.bootstrap',
+  'ngAudio'
 ])
 .config(function ($routeProvider) {
   $routeProvider

@@ -1,0 +1,23 @@
+<div ng-controller="ThemeSongCtrl">
+  <button class="btn btn-sm btn-primary" ng-click="isThemeSongCollapsed = !isThemeSongCollapsed">Theme Song Controls</button>
+  <div class="container well" collapse="isThemeSongCollapsed">
+    <h2 class="theme-song-title">Theme Song</h2>
+    <div class="row">
+      <div class="theme-song-buttons col-md-6">
+        <button class="btn btn-primary theme-song-button" ng-click='themeSong.paused ? themeSong.play() : themeSong.pause()'>{{ themeSong.paused ? "Play" : "Pause" }}</button>
+        <button class="btn btn-danger  theme-song-button" ng-click='themeSong.restart()'>Restart</button>
+        <button class="btn btn-warning theme-song-button" ng-click='themeSong.muting = !themeSong.muting'>{{ themeSong.muting ? "UnMute" : "Mute" }}</button>
+      </div>
+      <div class="col-md-6">
+        <table class="theme-song-table">
+          <tr><td>Time Elapsed:  </td><td>{{ themeSong.currentTime | number:2 }}</td></tr>
+          <tr><td>Time Remaining:</td><td>{{ themeSong.remaining   | number:2 }}</td></tr>
+        </table>
+      </div>
+    </div>
+    <div>
+      <label>Volume: {{ themeSong.volume }}</label>
+      <input class='form-control' type=range min=0 max=1 step=0.05 ng-model='themeSong.volume'>
+    </div>
+  </div>
+</div>

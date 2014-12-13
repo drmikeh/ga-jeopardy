@@ -1,9 +1,7 @@
 'use strict';
 
 angular.module('jeopardyApp')
-.controller('GameCtrl', function ($scope, $modal, $log, GameService) {
-
-  $scope.subjects = ['Ruby', 'Rails', 'JavaScript', 'AngularJS', 'OOP'];
+.controller('GameCtrl', function ($scope, $modal, $log, ngAudio, GameService) {
 
   $scope.getGame = function(name) {
     GameService.getGame(name).success(function(game) {
@@ -14,7 +12,10 @@ angular.module('jeopardyApp')
 
   $scope.getGame('game1');
 
+  var questionSound = ngAudio.load('sounds/times_up.mp3');
+
   $scope.doQuestion = function(category, question) {
+    questionSound.play();
     var modalInstance = $modal.open({
       templateUrl: 'views/question.html',
       controller: 'QuestionCtrl',
