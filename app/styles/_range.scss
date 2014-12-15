@@ -1,0 +1,106 @@
+$track-width: 300px;  // 100%;
+$track-height: 8px;
+$track-color: #004080;
+$track-border: 0px solid #000101;
+$track-background-color: #004385;
+
+$thumb-width: 12px;
+$thumb-radius: 12px;
+$thumb-color: #40c0ff;
+$thumb-border: 1px solid #0000ff;
+$thumb-shadow: 0px 0px 1px #000000, 0px 0px 0px #0d0d0d;
+
+input[type=range] {
+  // removes default webkit styles
+  -webkit-appearance: none;
+
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+
+  // required for proper track sizing in FF
+  width: $track-width;
+  margin: 10.5px 0;
+  &:focus {
+    outline: none;
+  }
+  &::-webkit-slider-runnable-track {
+    width: 100%;
+    height: $track-height;
+    cursor: pointer;
+    box-shadow: $thumb-shadow;
+    background: $track-color;
+    border-radius: 10px;
+    border: $track-border;
+  }
+  &::-webkit-slider-thumb {
+    box-shadow: $thumb-shadow;
+    border: $thumb-border;
+    height: 29px;
+    width: $thumb-width;
+    border-radius: $thumb-radius;
+    background: $thumb-color;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -10.5px;
+  }
+  &:focus::-webkit-slider-runnable-track {
+    background: $track-background-color;
+  }
+  &::-moz-range-track {
+    width: 100%;
+    height: $track-height;
+    cursor: pointer;
+    box-shadow: $thumb-shadow;
+    background: $track-color;
+    border-radius: 10px;
+    border: $track-border;
+  }
+  &::-moz-range-thumb {
+    box-shadow: $thumb-shadow;
+    border: $thumb-border;
+    height: 29px;
+    width: $thumb-width;
+    border-radius: $thumb-radius;
+    background: $thumb-color;
+    cursor: pointer;
+  }
+  &::-ms-track {
+    width: 100%;
+    height: $track-height;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+  }
+  &::-ms-fill-lower {
+    background: #003d7b;
+    border: $track-border;
+    border-radius: 20px;
+    box-shadow: $thumb-shadow;
+  }
+  &::-ms-fill-upper {
+    background: $track-color;
+    border: $track-border;
+    border-radius: 20px;
+    box-shadow: $thumb-shadow;
+  }
+  &::-ms-thumb {
+    box-shadow: $thumb-shadow;
+    border: $thumb-border;
+    height: 29px;
+    width: $thumb-width;
+    border-radius: $thumb-radius;
+    background: $thumb-color;
+    cursor: pointer;
+    height: $track-height;
+  }
+  &:focus {
+    &::-ms-fill-lower {
+      background: $track-color;
+    }
+    &::-ms-fill-upper {
+      background: $track-background-color;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+.question {
+    // height:100px;
+    // vertical-align: middle;
+    text-align: center;
+    // font-size: 1.5em;
+    // padding-top: 35px;
+    // cursor: pointer;
+}
+
+.jboard {
+  text-align: center;
+
+  table {
+    border: 10px solid black;
+    border-spacing: 5px;
+    border-collapse: collapse;
+  }
+  tr {
+    margin: 5px;
+    padding: 5px;
+  }
+  th, td {
+    width: 200px;
+    border: 10px solid black;
+    border-collapse: collapse;
+    color: yellow;
+    background-color: blue;
+    padding: 10px;
+    text-align: center;
+  }
+  th {
+    font-size: 1.2em;
+    font-weight: 400;
+    margin-bottom: 20px;
+    border-bottom: 20px solid black;
+  }
+  td {
+    font-size: 1.4em;
+    height: 80px;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+  }
+}
+
+.score {
+  @extend .well;
+  border-top: 1px solid #e5e5e5;
+  width: 100%;
+  text-align: right;
+  margin-top: 5px;
+  padding: 10px 20px 10px 10px;
+}

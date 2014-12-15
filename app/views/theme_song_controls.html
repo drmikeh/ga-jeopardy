@@ -15,9 +15,9 @@
         </table>
       </div>
     </div>
-    <div>
-      <label>Volume: {{ themeSong.volume }}</label>
-      <input class='form-control' type=range min=0 max=1 step=0.05 ng-model='themeSong.volume'>
+    <div style="margin-top: 20px;">
+      <label class="volume-label">Volume: {{ themeSong.volume }}</label>
+      <input class='form-control volume-slider' type=range min=0 max=1 step=0.10 ng-model='themeSong.volume'>
     </div>
   </div>
 </div>
