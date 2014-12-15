@@ -12,7 +12,7 @@ angular.module('jeopardyApp')
 
   $scope.getGame('game1');
 
-  var questionSound = ngAudio.load('sounds/times_up.mp3');
+  var questionSound = ngAudio.load('sounds/bell.mp3');
 
   $scope.doQuestion = function(category, question) {
     questionSound.play();

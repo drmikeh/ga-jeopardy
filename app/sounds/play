@@ -1,0 +1,17 @@
+#!/bin/bash
+
+files=( \
+bell.mp3 \
+boardfill.mp3 \
+buzzer.mp3 \
+final-reveal.mp3 \
+ring-in.mp3 \
+ring.mp3 \
+time.mp3 \
+)
+
+for file in ${files[@]}
+do
+  echo $file
+  afplay $file
+done
