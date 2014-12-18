@@ -69,23 +69,23 @@
       "questions": [
         {
           "value": 100,
-          "question": "How JavaScript objects extend other objects.",
-          "answer": "What is Prototype Inheritance?"
+          "question": "How an object refers to itself.",
+          "answer": "What is this?"
         },
         {
           "value": 200,
+          "question": "A way to run JavaScript on the server side.",
+          "answer": "What is NodeJS?"
+        },
+        {
+          "value": 300,
           "question": "A serialization format for JavaScript objects.",
           "answer": "What is JSON?"
         },
         {
-          "value": 300,
-          "question": "TODO",
-          "answer": "What is todo?"
-        },
-        {
           "value": 400,
-          "question": "TODO",
-          "answer": "What is todo?"
+          "question": "How JavaScript objects extend other objects.",
+          "answer": "What is Prototype Inheritance?"
         },
         {
           "value": 500,
@@ -110,18 +110,18 @@
         },
         {
           "value": 300,
-          "question": "Automatic insertion of an object into a function's parameter list",
-          "answer": "What is dependency injection?"
-        },
-        {
-          "value": 400,
           "question": "The AngularJS directive for iterating over a collection.",
           "answer": "What is ng-repeat?"
         },
         {
-          "value": 500,
+          "value": 400,
           "question": "Asynchronous operations, such as $http.get, return these.",
           "answer": "What are promises?"
+        },
+        {
+          "value": 500,
+          "question": "Automatic insertion of an object into a function's parameter list",
+          "answer": "What is dependency injection?"
         }
       ]
     },

@@ -11,6 +11,9 @@ OOP:
 HTTP:
   RESTful
 
+JavaScript:
+  IIFE - Immediately Invoked Function Expression
+
 Security:
   CSRF
   OAuth

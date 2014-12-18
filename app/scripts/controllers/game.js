@@ -1,20 +1,22 @@
 'use strict';
 
 angular.module('jeopardyApp')
-.controller('GameCtrl', function ($scope, $modal, $log, ngAudio, GameService) {
+.controller('GameCtrl', function ($modal, $log, ngAudio, GameService) {
 
-  $scope.getGame = function(name) {
+  var that = this;
+
+  this.getGame = function(name) {
     GameService.getGame(name).success(function(game) {
-      $scope.game = game;
-      $scope.score = 0;
+      that.game = game;
+      that.score = 0;
     });
   };
 
-  $scope.getGame('game1');
+  this.getGame('game1');
 
   var questionSound = ngAudio.load('sounds/bell.mp3');
 
-  $scope.doQuestion = function(category, question) {
+  this.doQuestion = function(category, question) {
     questionSound.play();
     var modalInstance = $modal.open({
       templateUrl: 'views/question.html',
@@ -34,7 +36,7 @@ angular.module('jeopardyApp')
 
     modalInstance.result.then(function (correct) {
       if (correct) {
-        $scope.score += question.value;
+        that.score += question.value;
       }
       question.isDone = true;
     }, function () {

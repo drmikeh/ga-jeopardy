@@ -16,7 +16,7 @@ angular
   $routeProvider
     .when('/home', {
       templateUrl: 'views/game.html',
-      controller: 'GameCtrl'
+      controller: 'GameCtrl as gameCtrl'
     })
     .when('/about', {
       templateUrl: 'views/about.html',
