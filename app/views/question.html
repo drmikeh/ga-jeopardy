@@ -1,20 +1,20 @@
 <div class="question">
   <div class="modal-header">
-      <h1 class="modal-title well">{{ category.name }} for ${{ question.value }}</h1>
+      <h1 class="modal-title well">{{ ctrl.category.name }} for ${{ ctrl.question.value }}</h1>
   </div>
 
   <div class="modal-body">
-    <h1 ng-hide="showAnswer">{{ question.question }}</h1>
-    <h1 ng-show="showAnswer">{{ question.answer }}</h1>
+    <h1 ng-hide="ctrl.showAnswer">{{ ctrl.question.question }}</h1>
+    <h1 ng-show="ctrl.showAnswer">{{ ctrl.question.answer }}</h1>
   </div>
   <div class="modal-footer">
-    <div ng-hide="showAnswer">
-      <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
-      <button class="btn btn-primary" ng-click="show()">Show Answer</button>
+    <div ng-hide="ctrl.showAnswer">
+      <button class="btn btn-warning" ng-click="ctrl.cancel()">Cancel</button>
+      <button class="btn btn-primary" ng-click="ctrl.show()">Show Answer</button>
     </div>
-    <div ng-show="showAnswer">
-      <button class="btn btn-warning" ng-click="incorrect()">Incorrect</button>
-      <button class="btn btn-primary" ng-click="correct()">Correct</button>
+    <div ng-show="ctrl.showAnswer">
+      <button class="btn btn-warning" ng-click="ctrl.incorrect()">Incorrect</button>
+      <button class="btn btn-primary" ng-click="ctrl.correct()">Correct</button>
     </div>
   </div>
 </div>

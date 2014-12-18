@@ -20,7 +20,7 @@ angular.module('jeopardyApp')
     questionSound.play();
     var modalInstance = $modal.open({
       templateUrl: 'views/question.html',
-      controller: 'QuestionCtrl',
+      controller: 'QuestionCtrl as ctrl',
       size: 'lg',
       backdrop: 'static', // backdrop is present but modal window is not closed when clicking outside of the modal window.
       keyboard: false,    // indicates whether the dialog should be closable by hitting the ESC key
