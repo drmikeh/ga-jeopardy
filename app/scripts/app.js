@@ -6,23 +6,31 @@ angular
   'ngCookies',
   'ngMessages',
   'ngResource',
-  'ngRoute',
+  'ui.router',
+  'ui.router.stateHelper',
+  // 'ct.ui.router.extras',
   'ngSanitize',
   'ngTouch',
   'ui.bootstrap',
+  'cgBusy',
   'ngAudio'
 ])
-.config(function ($routeProvider) {
-  $routeProvider
-    .when('/home', {
+.config(function ($stateProvider, $urlRouterProvider) {
+
+  $stateProvider.state(
+    {
+      name: 'home',
+      url: '/home',
       templateUrl: 'views/game.html',
       controller: 'GameCtrl as gameCtrl'
-    })
-    .when('/about', {
+    },
+    {
+      name: 'about',
+      url: '/about',
       templateUrl: 'views/about.html',
       controller: 'AboutCtrl'
-    })
-    .otherwise({
-      redirectTo: '/home'
-    });
+    }
+  );
+  
+  $urlRouterProvider.otherwise('/home');
 });
